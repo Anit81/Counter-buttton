@@ -10,7 +10,7 @@ It demonstrates how React can be used directly in the browser to update UI dynam
 
 ## 🚀 Live Demo
 
-🔗 [View on GitHub Pages](https://anit81.github.io/Counter-buttton/)
+ [View on GitHub Pages](https://anit81.github.io/Counter-buttton/)
 
 
 
