@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Counter App</title>
+
+  <!-- React core -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+
+  <!-- React DOM (connects React to the page) -->
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel (lets you use JSX in <script type="text/babel">) -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <style>
+    body{
+      padding: 0 auto;
+      display: flex;
+      flex-direction: column;   
+      justify-content: center;
+      align-items: center;      
+      height: 100vh;
+      background-color: #0c0909;
+    }
+    button{
+     padding: 15px 25px;
+     border-radius: 13px;
+     border:none;
+     margin: 5px;
+     font-size: 15px;
+     font-weight: 300;
+     background-color: #5454f9;
+     color:white;
+    }
+   button:hover {
+    background-color: #3f3fd9;
+    cursor: pointer;
+    border-radius: 13px;
+}
+    .para{
+      text-align: center;
+      font-size: 50px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Root element where React will render -->
+  <div id="root"></div>
+
+  <!-- Place your React code here -->
+  <script type="text/babel">
+    function Counter(){
+      let [count,setCount] = React.useState(0);
+      
+      function AddButton(){
+        setCount(count + 1);
+      }
+      
+      function minusButton(){
+        setCount(count - 1);
+      }
+      
+      function resetButton(){
+        setCount(0);
+      }
+      
+      return(
+        <>
+        <p className="para">{count}</p>
+        <button onClick={AddButton}>Increase</button>
+        <button onClick={minusButton}>Decrease</button>
+        <button onClick={resetButton}>Reset</button>
+        </>
+        );
+    }
+
+    function General(){
+      return(
+        <div className="all-together">
+        <Counter />
+        </div>
+        
+        );
+    }
+  let main =  document.getElementById("root");
+    ReactDOM.createRoot(main).render(<General />);
+  </script>
+</body>
+</html>
