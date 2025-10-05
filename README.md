@@ -81,16 +81,3 @@ Counter-buttton/
 👩‍💻 Author: Anit81  
 ✨ Built with React and love for learning frontend development — no complicated setup, just creativity!  
   
----  
-  
-✅ Then:    
-1. Go to your GitHub repo → click **Add file → Create new file**    
-2. Name it:  
-  
-README.md  
-  
-3. Paste **everything above** into the box    
-4. Click **Commit changes**  
-  
-After that, refresh your repository homepage — your README will appear beautifully formatted with headings, code blocks, and emojis 🌟
-
